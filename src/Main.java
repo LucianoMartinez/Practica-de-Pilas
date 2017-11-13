@@ -13,9 +13,9 @@ public class Main {
                     "\n1.-Insetar en la pila" +
                     "\n2.-Mostrar pila" +
                     "\n3.-Borrar el primero" +
-                    "\n4.-Obtener Altura (Futuramente)" +
-                    "\n5.-Mostrar el número Mayor (Futuramente)" +
-                    "\n6.-Mostrar el número menor (Futuramente)" +
+                    "\n4.-Obtener Altura" +
+                    "\n5.-Mostrar el número Mayor " +
+                    "\n6.-Mostrar el número menor " +
                     "\nSalir");
             String respuelta = sc.next();
             switch (respuelta){
@@ -28,6 +28,15 @@ public class Main {
                 break;
                 case "3":
                     p.pop();
+                break;
+                case "4":
+                    p.getSize();
+                break;
+                case "5":
+                    p.max();
+                break;
+                case "6":
+                    p.min();
                 break;
                 case "Salir":
                     repetir = false;

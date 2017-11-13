@@ -62,7 +62,7 @@ public class pilas {
 	 size--;
     }
 	public void getSize(){
-        System.out.println("Tama�o: "+ size);
+        System.out.println("Tamaño: "+ size);
     }
 
     //Método para obtener el valor Maximo de la pila
