@@ -65,4 +65,25 @@ public class pilas {
         System.out.println("Tama�o: "+ size);
     }
 
+    //Método para obtener el valor Maximo de la pila
+    public void max(){
+        int m = top.getValor();
+        for (nodo temp = top; temp!=null; temp=temp.getProx()){
+            if (m < temp.getValor()){
+                m = temp.getValor();
+            }
+        }
+        System.out.println("Valor Maximo: " + m);
+    }
+
+    //Método para obtener el valor Minimo de la pila
+    public void min(){
+        int m = top.getValor();
+        for (nodo temp = top; temp!=null; temp=temp.getProx()){
+            if (m > temp.getValor()){
+                m = temp.getValor();
+            }
+        }
+        System.out.println("Valor Minimo: "+ m);
+    }
 }
