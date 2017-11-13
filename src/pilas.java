@@ -2,6 +2,9 @@
  * Created by luciano on 07/11/2017.
  */
 public class pilas {
+
+    public int size = 0;
+    
     private nodo top;
 
     public pilas(){
@@ -20,7 +23,9 @@ public class pilas {
             nuevoNodo = new nodo(valor);
             nuevoNodo.setProx(top);
             top = nuevoNodo;
+
         }
+	 size++;
     }
 
     //Metodo mostrar datos
@@ -54,6 +59,10 @@ public class pilas {
         }
         else
             System.out.println("La pila esta vacia");
+	 size--;
+    }
+	public void getSize(){
+        System.out.println("Tamaño: "+ size);
     }
 
 }
